@@ -30,6 +30,7 @@
     
     #time {
         color: #ff0000;
+        box-shadow: 5px 5px 5px;
         font-size: 20px;
         text-align: center;
         position:absolute; top:340px; 
