@@ -40,7 +40,7 @@
         });
 
         $('#btnD').click(function(e) {
-            btnCClick(e);
+            btnDClick(e);
         });
         init();
     });
@@ -201,12 +201,15 @@
         alarm();
         active = false;
         period = 60* parseInt( $("#minute").val() ) + parseInt( $("#second").val() );
-        $("#time").html("経過時間： 0");　
+        $("#time").html("経過時間： 0");
         $("#remain").html("残り時間： " + period);
     }
 
     function btnDClick(e){
         active = false;
+        period = 60*3;
+        $("#time").html("経過時間： 0");
+        $("#remain").html("残り時間： " + period);
     }
     
  
