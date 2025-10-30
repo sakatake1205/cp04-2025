@@ -218,6 +218,23 @@
 
     function btnEClick(e){
         active = false;
+        period = 0;
+        rest = 0;
+        $("#time").html("経過時間： 0");
+        $("#remain").html("残り時間：0" );
+
+        //$("#mycanvas").hide();
+        //var canvas = $("#mycanvas")[0];
+        //var img = new Image(); 
+        //img.src = "ksuisbg.gif";
+        //img.onload = function() {
+         //ctx.drawImage(img, 0, 0, 300, 300);
+        //}
+        
+        
+        // $("#mycanvas").show();
+        // $("#myImage").hide();
+
     }
     
  
@@ -225,7 +242,7 @@
     function timer(){  
         if (active) {
             etime = parseInt( (new Date() - startTime)/1000 );
-            rest = period - etime;　
+            rest = period - etime;
             $("#time").html("経過時間： " + etime);
             $("#remain").html("残り時間： " + rest);
             analog(rest);
