@@ -45,6 +45,9 @@
         $('#btnE').click(function(e) {
             btnEClick(e);
         });
+        $('#btnF').click(function(e) {
+            btnEClick(e);
+        });
         init();
     });
     
@@ -172,6 +175,7 @@
         $('#btnC').prop('disabled', false);
         $('#btnD').prop('disabled', false);
         $('#btnE').prop('disabled', false);
+        $('#btnF').prop('disabled', false);
         
     }
 
@@ -252,6 +256,10 @@
         // $("#myImage").hide();
 
     }
+
+    function btnFClick(e){
+        active = false;
+    }
     
  
     // 繰り返し実行する処理
@@ -284,6 +292,7 @@
     <button id="btnC">Set</button>
     <button id="btnD">3min</button>
     <button id="btnE">Reset</button>
+    <button id="btnF">Restart</button>
     <input type="number" id="minute" value=0 >
     <input type="number" id="second" value=15 >
 </body>

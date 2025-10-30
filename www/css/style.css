@@ -79,6 +79,11 @@
         font-size: 20px;
         position:absolute; top:550px; left:2%; width:35%; height:60px; 
     } 
+
+    #btnF {
+        font-size: 20px;
+        position:absolute; top:550px; left:37%; width:33%; height:60px; 
+    }
     
     #minute {
         font-size: 30px;
